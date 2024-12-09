@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stardew Valley Fall</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+
+  <body class="center-content">
+    <div class="maze">
+      <div class="row">
+        <div class="box">
+          <img
+            class="clickable"
+            id="r1c1"
+            src="images/up.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r1c2"
+            src="images/right.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r1c3"
+            src="images/left.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box"></div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r1c5"
+            src="images/right.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r1c6"
+            src="images/down.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <img
+            class="clickable"
+            id="r2c1"
+            src="images/down.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box"></div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r2c3"
+            src="images/up.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r2c4"
+            src="images/down.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box"></div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r2c6"
+            src="images/right.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <img
+            class="clickable"
+            id="r3c1"
+            src="images/right.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r3c2"
+            src="images/down.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box"></div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r3c4"
+            src="images/up.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box"></div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r3c6"
+            src="images/right.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r4c2"
+            src="images/up.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box"></div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r4c4"
+            src="images/up.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box"></div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r4c6"
+            src="images/up.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <img
+            class="clickable"
+            id="r5c1"
+            src="images/up.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r5c2"
+            src="images/left.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box"></div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r5c4"
+            src="images/up.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r5c5"
+            src="images/up.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+        <div class="box">
+          <img
+            class="clickable"
+            id="r5c6"
+            src="images/right.png"
+            onclick="swapElements(this)"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- positioned figures on the page not part of the DOM -->
+ <img src="images/right.png" class="spot1 clickable none" id="next" onclick="changeEnd()"/>
+ <img src="images/lewis.png" class="hint clickable" onclick="showModal()" />
+ <img src="images/farmerback.png" id="farmer2" class="spot2 none" />
+ <img src="images/farmerright.png" id="farmer1" class="spot3" />
+
+<!-- this modal is 'fixed' in position so it doesn't affect elements in your DOM -->
+<div class="modal center-content" id="myModal">
+  <!-- this is the "X" button to close the modal -->
+  <span class="close" style="font-size: 50px" onclick="hideModal()"
+    >&times;</span
+  >
+  <!-- this is a new blank canvas for you to build -->
+  <div class="modal-content center-content">
+    <!-- the content of your modal pop-up! -->
+    <img src="images/lewis2.png"/>
+  </div>
+</div>
+  </body>
+
+  <audio src="audio/slide.mp3" type="audio/mp3" id="slide"></audio>
+  <script src="script.js"></script>
+  <script src="preload.js"></script>
+
+</html>

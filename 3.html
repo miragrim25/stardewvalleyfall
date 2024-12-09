@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stardew Valley Fall</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body id="body">
+    <!-- Notice how each div has an 'onclick' attribute which links to a function in the JS file -->
+
+    <div class="top"></div>
+    <div class="middle">
+      <div class="left"></div>
+      <div class="chest clickable" id="chest" onclick="samDeath()">
+        <img src="" id="sam" onclick="" />
+      </div>
+      <div class="right"></div>
+    </div>
+    <div class="bottom"></div>
+
+    <img src="images/farmerfront.png" id="farmer" class="farmer" />
+    <img src="images/sebastian1.png" id="sebastian1" class="sebastian" />
+    <img src="images/sebastian2.png" id="sebastian2" class="sebastian none" />
+    <img src="images/penny.png" id="penny" class="penny none" />
+
+    <!-- this modal is 'fixed' in position so it doesn't affect elements in your DOM -->
+    <div class="modal center-content" id="note">
+      <!-- this is the "X" button to close the modal -->
+      <img
+        class="close clickable"
+        src="images/right.png"
+        onclick="nextRoom()"
+      />
+      <!-- this is a new blank canvas for you to build -->
+      <div class="modal-content center-content">
+        <!-- the content of your modal pop-up! -->
+        <img src="images/inventory.png" />
+      </div>
+    </div>
+
+    <audio src="audio/chest.mp3" type="audio/mp3" id="chestaudio"></audio>
+    <script src="script.js"></script>
+    <script src="preload.js"></script>
+  </body>
+</html>
