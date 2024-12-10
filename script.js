@@ -94,6 +94,7 @@ function correctMaze() {
 function samDeath() {
   if (deathOccurring == true) {
     console.log("sam death...");
+    document.getElementById("chest1").classList.add("none");
     document.getElementById("chestaudio").play();
     s.src = "images/sam/sam1.png";
     setTimeout(function () {
