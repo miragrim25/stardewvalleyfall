@@ -34,6 +34,14 @@ body {
   max-width: 14%;
 }
 
+.chest1 {
+  position: fixed;
+  top: 44%;
+  right: 35%;
+  max-height: 50%;
+  max-width: 50%;
+}
+
 .none {
   display: none;
 }
@@ -116,7 +124,8 @@ body {
 }
 
 .green {
-  background-color: green;
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 10px #d36411); /*d36411*/
 }
 
 .yellow {
@@ -163,3 +172,4 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
