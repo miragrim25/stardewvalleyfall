@@ -137,7 +137,7 @@ function samDeath() {
 }
 
 function nextRoom() {
-  window.location.href = "https://xsrn9c.csb.app/";
+  window.location.href = "https://isabela-222.github.io/WINTER/";
 }
 
 function noteAcquired() {
